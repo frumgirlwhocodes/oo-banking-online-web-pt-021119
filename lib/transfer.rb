@@ -17,5 +17,6 @@ def valid?
        @status= "complete"
      else 
        @status= "rejected"
+       "Transactionrejected. Please check your account balance."
    end 
 end 
