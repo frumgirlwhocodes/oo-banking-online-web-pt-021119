@@ -15,9 +15,9 @@ def valid?
      if valid? &&  sender.balance > amount && self.status ="pending"
        sender.balance -= amount 
        receiver.balance += amount 
-       @status= "complete"
+       self.status= "complete"
      else 
-       @status= "rejected"
+       self.status= "rejected"
        "Transaction rejected. Please check your account balance."
    end 
  end 
