@@ -22,6 +22,6 @@ def valid?
     end
   end
   def reverse_transfer
-    if valid? && 
+    if valid? && sender.balance > amount 
   
 end 
