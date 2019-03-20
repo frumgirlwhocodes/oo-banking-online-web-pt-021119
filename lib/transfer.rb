@@ -14,6 +14,6 @@ def valid?
      if sender.valid? && @amount < sender.balance
        sender.balance -= amount 
        receiver.balance -= amount 
-       @status= 
+       @status= "complete"
    end 
 end 
