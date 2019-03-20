@@ -10,6 +10,7 @@ end
 def valid?
     sender.valid? && receiver.valid?
   end 
-   def execute_transaction  
+   def execute_transaction 
+     if sender.valid? && @amount < @balance 
    end 
 end 
